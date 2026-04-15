@@ -1,21 +1,21 @@
 ﻿# Fitness Activity Prediction
 
 ## Goal
-��������������� ������� ���������� ������������ (steps �� ��������� ����) �� ������ ������������ ������ ������-�������.
+Прогнозирование дневной активности пользователя (steps на следующий день) на основе исторических данных фитнес-трекера.
 
 ## Stack
 Python 3.11, PyTorch, LightGBM, FastAPI, MLflow, Docker, Pandas, scikit-learn.
 
 ## Quick Start
-1. ���������� Python 3.11 � Poetry.
-2. ���������� �����������: `poetry install`.
-3. �������� ������� � `data/raw/`.
+1. Установить Python 3.11 и Poetry.
+2. Установить зависимости: poetry install.
+3. Положить датасет в data/raw/.
 
 ## Data
-�������� ������: Fitbit Fitness Tracker Data (Kaggle, Mobius).
+Источник данных: Fitbit Fitness Tracker Data (Kaggle, Mobius).
 
 ## Task
-���������: ����������� `steps` �� ��������� ���� ��� ������� ������������ �� ���� ������������ ���������.
+Регрессия: предсказать steps на следующий день для каждого пользователя по окну исторических признаков.
 
 ## Results
 | Model | MAE | RMSE | MAPE |
