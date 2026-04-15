@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "fitness-activity-prediction"
+version = "0.1.0"
+description = "User activity prediction for fitness apps"
+authors = ["Intern <intern@example.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "*"
+numpy = "*"
+scikit-learn = "*"
+lightgbm = "*"
+torch = "*"
+mlflow = "*"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+matplotlib = "*"
+seaborn = "*"
+jupyter = "*"
+pyarrow = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

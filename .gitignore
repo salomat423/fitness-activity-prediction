@@ -1,0 +1,9 @@
+data/raw/*
+data/processed/*
+models/*.pkl
+models/*.pt
+models/scaler.pkl
+mlruns/
+.env
+__pycache__/
+.ipynb_checkpoints/
