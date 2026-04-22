@@ -53,3 +53,9 @@
 - Val метрики: MAE=4008.35, RMSE=5180.27, MAPE=38.38%.
 - Эксперимент залогирован в MLflow (SQLite backend).
 - Модель сохранена: models/baseline_lgbm.pkl.
+
+## Day 8
+- Создан `src/models/dataset.py` — FitnessSequenceDataset, окна по 7 дней, 92 sequences.
+- Создан `src/models/lstm.py` — LSTMRegressor(17→64→1), 54,593 параметров.
+- Проверка размерностей прошла: X=[7,17], y=[1], NaN нет.
+- Scaler сохранён: models/scaler.pkl.
