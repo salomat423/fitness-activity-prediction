@@ -47,3 +47,9 @@
 - Создан `src/data/add_target.py` — target = steps следующего дня.
 - Размеры после добавления таргета: train=528, val=95, test=74.
 - Все 8 тестов метрик прошли успешно.
+
+## Day 7
+- Обучен baseline LightGBM регрессор.
+- Val метрики: MAE=4008.35, RMSE=5180.27, MAPE=38.38%.
+- Эксперимент залогирован в MLflow (SQLite backend).
+- Модель сохранена: models/baseline_lgbm.pkl.
