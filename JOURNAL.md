@@ -37,7 +37,13 @@
   - test:  165 строк (2016-05-08 — 2016-05-12)
 
 ## Day 5
-* Создан `src/features/build_features.py`.
-* 17 новых признаков: лаги (1,3,7), скользящие средние (3,7,14), календарные, activity_streak.
-* Лаги и rolling считаются через shift(1) — утечки данных нет.
-* Сохранены train/val/test_features.parquet.
+- Создан `src/features/build_features.py`.
+- 17 новых признаков: лаги (1,3,7), скользящие средние (3,7,14), календарные, activity_streak.
+- Лаги и rolling считаются через shift(1) — утечки данных нет.
+- Сохранены train/val/test_features.parquet.
+
+## Day 6
+- Создан `src/eval/metrics.py` — mae, rmse, mape, evaluate.
+- Создан `src/data/add_target.py` — target = steps следующего дня.
+- Размеры после добавления таргета: train=528, val=95, test=74.
+- Все 8 тестов метрик прошли успешно.
