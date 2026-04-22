@@ -56,6 +56,7 @@ def main():
         "verbose": -1,
     }
 
+    mlflow.set_tracking_uri("sqlite:///mlflow.db")
     mlflow.set_experiment("fitness-activity-prediction")
 
     with mlflow.start_run(run_name="baseline_lgbm"):
