@@ -59,3 +59,10 @@
 - Создан `src/models/lstm.py` — LSTMRegressor(17→64→1), 54,593 параметров.
 - Проверка размерностей прошла: X=[7,17], y=[1], NaN нет.
 - Scaler сохранён: models/scaler.pkl.
+
+## Day 9 (Финал)
+- Обучен LSTM v1: MAE=11445, RMSE=13243, MAPE=99.83%.
+- LightGBM baseline значительно лучше: MAE=4008.
+- Создан report/final_metrics.md с выводами.
+- Финальная модель в прод: LightGBM Baseline.
+- FastAPI сервис задеплоен локально.
